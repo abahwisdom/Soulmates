@@ -1,0 +1,233 @@
+
+.sign-body{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+    justify-content: center;
+    text-align: center;
+    margin: 10% auto;
+    width: fit-content;
+    flex-direction: column;
+}
+
+.sign-logo{
+    margin: 6px auto;
+    width: 100%;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 50px;
+    color: #e03351;
+    
+}
+
+
+.sign-logo:hover{
+    text-decoration: none;
+    color: #e03351;
+    cursor: pointer;
+}
+
+.logoSign{
+    height: 31px;
+    margin: auto;
+}
+
+.sign-contain{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:100%;
+    padding:0 20px;
+    font-family: 'Titillium Web';
+}
+
+.sign-input{
+    width:400px;
+    max-width: 400px;
+    margin: 5px auto;
+    height: 40px;
+    padding: 7px;
+    
+}
+
+.sign-input:focus {
+       /* border-color: #e03351; */
+    /* outline: none; */
+    box-shadow: inset 0 1px 1px rgb(224 51 81 / 0%), 0 0 8px rgb(224 51 81);
+    outline-color: #e03351;
+    border: none;
+    
+}
+
+.sign-submit{
+    width:400px;
+    max-width: 400px;
+    margin: 5px auto;
+    height: 40px;
+    color: #fff;
+    background-color: #e03351;
+    border-color: #e03351;
+    cursor: pointer;
+    
+    font-weight: 400;
+   
+    text-align: center;
+   
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+
+}
+
+.sign-submit:hover{
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.sign-create{
+    width:175px;
+    max-width: 175px;
+    height:30px;
+    margin: 15px auto;
+    line-height: 0.5;
+}
+
+.sign-reset{
+    font-size: 15px;
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+}
+    .hr-text:before {
+      content: '';
+
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    
+    .hr-text:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      color: #818078;
+      background-color: aliceblue;
+    }
+  
+
+/* profile */
+.about{
+    height:215px;
+  }
+
+.dp-container{
+  height: 306px;
+  width: 335px;
+  /* border: 1px solid red; */
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+}
+
+.profile-page{
+    display:flex;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .profile-page{
+        display:block;
+    }
+  }
+
+  .dp-container-with-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+
+.dp-container-with-text *{
+  padding:5px;
+  font-family: 'Titillium Web';
+  }
+
+.edit-heading{
+    font-size:24px;
+    color: #007bff;
+    margin: 6px auto;
+    width: 100%;
+    text-align: center;
+    font-family: Playfair Display;
+    /* font-size: 50px; */
+    /* color: #e03351; */
+}
+
+.error-message{
+    width: 400px;
+    color: #e03351;
+}
+
+.profile-form .sign-input{
+    border-radius: 7px;
+    border: 1.5px solid #e03351;
+    background-color: #ffeded;
+}
+
+/* loading */
+
+.loading-icon{
+    margin-top: 36vh;
+}
+
+.loading-div{
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+.profile-form{
+    margin: 5% auto;
+}
+
+@media (max-width: 439px){
+    #root{
+        width: fit-content;
+        min-width: 100%;
+    }
+  }
+
+.logoSign-home{
+    height: 18px;
+}
+
+.sign-logo-home{
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.edit-heading{
+    font-size: 37px;
+}
