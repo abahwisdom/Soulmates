@@ -97,7 +97,7 @@ const ExploreUnit=(props)=>{
         <div className="page wow zoomIn" data-wow-duration="1.5s" 
         style={{'display':`${props.currentGender==props.gender||props.currentGender=='ALL'?'block':'none'}`}}
         >
-          <div className="archive">
+          {/* <div className="archive"> */}
             <article className="article">
                 <div className="contain-explore">
                     <div className="pic">
@@ -113,8 +113,8 @@ const ExploreUnit=(props)=>{
                        </div>
                     </div>
                     <div className="name-box">
-                        <h2 className='explore-name'>{props.username}, <span className="explore-age"> {props.age} </span></h2>
-                        <p className='explore-city'>{props.gender}, {props.city}</p>
+                        <div className='explore-name'>{props.username}, <span className="explore-age"> {props.age} </span></div>
+                        <div className='explore-city'>{props.gender}, {props.city}</div>
                     </div>
                     <div className="info">
                         <p className='explore-about'>
@@ -141,7 +141,7 @@ const ExploreUnit=(props)=>{
                 
                
           
-            </div>
+            {/* </div> */}
     </div>
 
         </>

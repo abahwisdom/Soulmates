@@ -41,6 +41,7 @@ const ExploreSingle=(props)=>{
             <option name='currentGender' value='Male'>Male</option>
             <option name='currentGender' value='Other'>Other</option>
         </select>
+        <div className='archive'>
         { entireData?
             entireData.map(user=>{
                 // user[1]
@@ -69,6 +70,7 @@ const ExploreSingle=(props)=>{
             }) : ''
             // .map((a) => ({sort: Math.random(), value: a})).sort((a, b) => a.sort - b.sort).map((a) => a.value)
         }
+        </div>
         
             
         </>

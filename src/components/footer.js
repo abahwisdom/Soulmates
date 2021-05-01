@@ -8,7 +8,7 @@ export default function Footer(){
     return(
         <>
         
-        <footer style={{padding:'0.5rem', fontFamily:'Playfair Display'}} >
+        <footer style={{padding:'0.5rem', fontFamily:'Playfair Display', color:'#e03351'}} >
             <div className="left-foot text-center mb-2">
                 <div className=' playfair' >
                 Soulmate(s) </div>

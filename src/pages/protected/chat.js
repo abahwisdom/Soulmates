@@ -82,7 +82,7 @@ class Chat extends React.Component {
             name: this.props.userDetails.username,
           //   email: "demo@talkjs.com",
             photoUrl: this.props.photoUrl,
-            welcomeMessage: "Hey there! How are you? :-)",
+            // welcomeMessage: "Hey there! How are you? :-)",
             role: "user"
           });
           
@@ -101,7 +101,7 @@ class Chat extends React.Component {
               // email: "demo@talkjs.com",
               photoUrl: this.props.recipient.photoUrl,
               // "https://demo.talkjs.com/img/sebastian.jpg",
-              welcomeMessage:  "Hey, how can I help?",
+              // welcomeMessage:  "Hey, how can I help?",
               role: "user"
               });
   

@@ -74,8 +74,8 @@ const Landing=()=>{
                 <div className="row">
                     <div className="col-md-7 ">
                         <h1 className="title-main wow bounceIn" data-wow-duration="2s">Soulmate(s)</h1>
-                        <h3 className="subtitle-main wow fadeInUp" data-wow-duration="1.1s">So kiss me sweet with your warm wet mouth,<br/>
-Still fragrant with ruby wine,<br/>
+                        <h3 className="subtitle-main wow fadeInUp" data-wow-duration="1.1s">So kiss me sweet...,<br/>
+{/* Still fragrant with ruby wine,<br/> */}
 And say with a fervor born of the South<br/>
 That your body and soul are mine.<br/>
 Clasp me close in your warm young arms,<br/>

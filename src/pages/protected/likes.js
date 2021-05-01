@@ -7,7 +7,7 @@ import ExploreUnit from '../../components/explore-unit';
 const Likes=(props)=>{
 
     const temp= <Alert color='danger' className='temp-like' >No Likes Yet</Alert>
-    const [entireData, setEntireData]= useState(temp);
+    const [entireData, setEntireData]= useState([]);
 
     useEffect(()=>{
         if (!props.userDetails.username){
@@ -31,23 +31,7 @@ const Likes=(props)=>{
                                 var details= Object.entries(user[1])[0][1];
                                 // C= details;
                                 console.log(details);
-                                C.push(
-                                                    <React.Fragment key={details.key}>
-                                                        <ExploreUnit
-                                                            username={details.username} 
-                                                            age={details.age} 
-                                                            gender={details.gender} 
-                                                            city={details.city} 
-                                                            about={details.about} 
-                                                            url={details.key}
-                                                            userDetails={props.userDetails}
-                                                            mode='like'
-                                                            setRecipient={props.setRecipient}
-                                                            currentGender='ALL'
-                                                        />
-                                                    </React.Fragment>
-                                    
-                                                ) 
+                                C.push(details) 
                             } else{return null}
                         }
                         )
@@ -55,7 +39,7 @@ const Likes=(props)=>{
             
                     );
                     // console.log(A);
-                    setEntireData(C.map(unit=>{return unit}));
+                    setEntireData(C);
 
                 
                 })}
@@ -73,7 +57,28 @@ const Likes=(props)=>{
 
     return(
         <>
-        {entireData}           
+        <div className='archive'>
+            {
+                entireData.length>0? entireData.map(unit=>{
+                    return(
+                        <React.Fragment key={unit.key}>
+                        <ExploreUnit
+                            username={unit.username} 
+                            age={unit.age} 
+                            gender={unit.gender} 
+                            city={unit.city} 
+                            about={unit.about} 
+                            url={unit.key}
+                            userDetails={props.userDetails}
+                            mode='like'
+                            setRecipient={props.setRecipient}
+                            currentGender='ALL'
+                        />
+                    </React.Fragment>
+                    )
+                }): ''
+            }
+        </div>         
         </>
     )
 }
