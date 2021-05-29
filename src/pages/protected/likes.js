@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import {useEffect} from 'react'
 import firebase from 'firebase'
-import { Alert } from 'reactstrap'
+import { Alert, Jumbotron } from 'reactstrap'
 import ExploreUnit from '../../components/explore-unit';
 
 const Likes=(props)=>{
@@ -76,7 +76,7 @@ const Likes=(props)=>{
                         />
                     </React.Fragment>
                     )
-                }): ''
+                }): <Jumbotron style={{fontSize:'50px', fontFamily:'Playfair Display', color:'#007bff'}}>No Likes Yet</Jumbotron>
             }
         </div>         
         </>
